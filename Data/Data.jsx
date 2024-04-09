@@ -12,4 +12,6 @@ export function createRandomUser() {
   };
 }
 
+
+
 export const USERS = Array.from({length: 30}, createRandomUser);

@@ -45,7 +45,17 @@ export const Navigator = () => {
           headerLeft: () => <Logo />,
         }}
       />
-      <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="Profile" component={Profile}
+            options={{
+              title: "Profile",
+              headerShadowVisible: false,
+              headerTitleStyle: {
+                fontWeight: "bold",
+                fontSize: 34,
+              },
+  
+            }}
+       />
     </Stack.Navigator>
   );
 };
