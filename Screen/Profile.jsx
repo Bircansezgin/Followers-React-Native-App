@@ -13,6 +13,7 @@ useEffect(() => {
     const id = route.params.userID;
     const findUser = USERS.find((user) => user.userId === id);
     setUser(findUser);
+      //
   })();
 }, []);
 
